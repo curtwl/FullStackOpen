@@ -1,0 +1,135 @@
+/* this was just me having fun learning CSS and thus looks rather garish */
+body {
+  background: #74ebd5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  box-sizing: border-box;
+  /* border: 5px solid black; */
+}
+
+.header {
+  box-shadow: 0px 0px 5px 0px black;
+  background-color: blue;
+  color: whitesmoke;
+  padding: 0 8px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  max-width: 95%;
+  width: 100%;
+  border: 5px solid black;
+
+  & h1 {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+}
+
+.filter {
+  margin-top: 0px;
+}
+
+.add-form {
+  box-shadow: 0px 0px 5px 0px black;
+  background-color: blue;
+  color: whitesmoke;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  max-width: 95%;
+  width: 100%;
+  border: 5px solid black;
+
+  & button {
+    margin: auto;
+  }
+}
+
+.numbers {
+  display: grid;
+  box-shadow: 0px 0px 5px 0px black;
+  background-color: rgb(81, 81, 255);
+  color: whitesmoke;
+  padding: 8px;
+  border-radius: 6px;
+  max-width: 95%;
+  width: 100%;
+  border: 5px solid black;
+}
+
+.people {  
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+
+  & button {
+    height: 37%;
+    width: 16%;
+    border-radius: 8px;
+    border: 2px solid gray;
+    background-color:blue;
+    color: whitesmoke;
+    
+    cursor: pointer;
+    font-weight: 700;
+
+    &:active {
+      background-color:red;
+    }
+  }
+
+  & p {
+    box-shadow: 0px 0px 5px black;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 3px;
+    border: 2px solid gray;
+    width: 80%;
+
+    &:active {
+      background-color:blue;
+    }
+
+  }
+}
+
+.one-number {
+  font-weight: 900;
+}
+
+.notification-placeholder {
+  min-height: 55px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0px;
+  height: 100%;
+}
+
+.error, .success {
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0px;
+  min-height: 55px;
+  height: 100%;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
