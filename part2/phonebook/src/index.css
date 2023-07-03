@@ -1,0 +1,97 @@
+/* this was just me having fun learning CSS and thus looks rather garish */
+body {
+  background: #74ebd5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Roboto', sans-serif;
+}
+
+h2, h3 {  
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  box-shadow: 0px 0px 5px 0px black;
+  background-color: blue;
+  color: whitesmoke;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  max-width: 30%;
+  border: 5px solid black;
+}
+
+.add-form {
+  box-shadow: 0px 0px 5px 0px black;
+  background-color: blue;
+  color: whitesmoke;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  max-width: 30%;
+  border: 5px solid black;
+}
+
+.numbers {
+  box-shadow: 0px 0px 5px 0px black;
+  background-color: rgb(81, 81, 255);
+  color: whitesmoke;
+  padding: 8px;
+  border-radius: 6px;
+  max-width: 75%;
+  border: 5px solid black;
+}
+
+.people {  
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+
+  & button {
+    height: 37%;
+    width: 6%;
+    border-radius: 8px;
+    border: 2px solid gray;
+    background-color:#203A43;
+    color: whitesmoke;
+
+    &:active {
+      background-color:red;
+    }
+  }
+
+  & p {
+    box-shadow: 0px 0px 5px black;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 3px;
+    border: 2px solid gray;
+    width: 50%;
+
+    &:active {
+      background-color:blue;
+    }
+
+  }
+}
+
+.error {
+  color: red;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.success {
+  color: green;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}

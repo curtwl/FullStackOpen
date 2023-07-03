@@ -1,0 +1,18 @@
+body {
+  margin: 0px;
+}
+
+.filter {
+  margin: 0 auto;
+  padding: 0px 8px;
+  position: fixed;
+  background-color: beige;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.country {
+  padding-top: 30px;
+  margin-left: 40px;
+}
